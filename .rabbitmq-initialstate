@@ -1,0 +1,48 @@
+# RabbitMQ settings
+
+RABBITMQ_HOST=
+
+RABBITMQ_PORT=
+
+RABBITMQ_USERNAME=
+
+RABBITMQ_PASSWORD=
+
+RABBITMQ_VIRTUAL_HOST=
+
+RABBITMQ_QUEUE=
+
+RABBITMQ_BACKUP_QUEUE=
+
+RABBITMQ_ERROR_QUEUE=
+
+# Initial State settings
+
+INITIALSTATE_KEY=
+
+INITIALSTATE_POINTS_FLUSH=1000
+
+INITIALSTATE_MILLIS_FLUSH=5000
+
+# Log settings
+
+# Log for normal performance
+NORMAL_LOG=
+
+# Maximum number of normal log files
+NORMAL_LOG_NUM=10
+
+# Maximum size of each normal log file, in bytes
+NORMAL_LOG_SIZE=1000000
+
+# Time, in milliseconds, between normal log entries
+NORMAL_LOG_INTERVAL=5000
+
+# Log for errors
+ERROR_LOG=
+
+# Maximum number of error log files
+ERROR_LOG_NUM=10
+
+# Maximum size of each error log file, in bytes
+ERROR_LOG_SIZE=1000000

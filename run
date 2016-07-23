@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# run script from Brown University's CS32
+
+TARGET=$(ls target/*.jar 2>/dev/null)
+if [ -z "$TARGET" ]; then
+    echo "No jar file in target/, try 'mvn package'".
+    exit 1
+fi
+if [ ! .mvn-classpath -nt pom.xml ]; then
+  mvn dependency:build-classpath -Dmdep.outputFile=.mvn-classpath -q
+fi
+CP=$(cat .mvn-classpath)
+java -cp $TARGET:$CP main.Main "$@"
